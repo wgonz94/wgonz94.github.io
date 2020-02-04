@@ -1,2 +1,7 @@
 # wgonz94.github.io
-my personal website
+# Portfolio
+
+Link to deployed site:
+
+https://wgonz94.github.io/
+
