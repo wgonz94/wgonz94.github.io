@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>William Gonzales' Portfolio</title>
 
@@ -38,17 +39,17 @@
       </div>
     </nav><br><br><br><br>
     <div id="firstMessage">
-   <p class="white-text">Hi! My name is William Gonzales<br>
-                         I am a Full Stack Developer.<br>
-                         Let's find out more about me!</p>
+   <p class="white-text animated slideInUp">Hi! My name is William Gonzales</p>
+   <p class="white-text animated slideInRight">I am a Full Stack Developer.</p>
+   <p class="white-text animated slideInLeft">Let's find out more about me!</p>
 </div>
   </header>
   <section class="container section scrollspy">
     <div class="row">
       <div class="col s12 l4 push-l8">
-          <img src="./assets/img/profilePic2020.jpg.jpeg" alt="Portfolio Picture" class="portfo circle responsive-img materialboxed">
+          <img src="./assets/img/profilePic2020.jpg.jpeg" alt="Portfolio Picture" class="portfo circle responsive-img materialboxed animated rollIn delay-3s">
       </div>
-      <div class="col s12 l6 offset-l1 pull-l5">
+      <div class="col s12 l6 offset-l1 pull-l5 animated rotateIn delay-3s">
         <h2 id="about">About Me</h2>
         <p class="aboutMe">My name is William Gonzales, and I am a Full-Stack Web Developer from Riverside, CA. I create and troubleshoot websites with a standard understanding and implementation of the front-end and back-end capabilities. It gives me a challenge that I welcome every single day, and I love it!<br><br>
           I became interested in the field of programming and web development to create content that looks appealing and hooks the user in. I am constantly searching for ways to improve my skills and to be influenced by all the upcoming updates in programming. I want to bring some fully functional websites and amazing moments to those I work with in the process.<br><br>
@@ -67,22 +68,48 @@
   <!-- services / tabs -->
   <section class="section container scrollspy" id="portfolio">
     <div class="row">
-      <div class="col s12 l12">
-        <!-- tabs -->
-        <h1 class="white-text portfolio center-align">My Portfolio</h1>
-        <ul class="tabs">
-          <li class="tab col s4">
-            <a href="#frontend" class="indigo-text text-darken-4">Front-End</a>
-          </li>
-          <li class="tab col s4">
-            <a href="#backend" class="indigo-text text-darken-4">Back-End</a>
-          </li>
-          <li class="tab col s4">
-            <a href="#fullstack" class="active indigo-text text-darken-4">Full-Stack</a>
-          </li>
-        </ul>
-        <div id="frontend" class="col s12">
-            <p class="flow-text indigo-text text-darken-4"></p>
+      <div class="col s12 l12 push-l2">
+        
+        <h1 class="white-text right-align">My Portfolio</h1>
+       
+      
+        <!-- Carousel Container for projects-->
+        <div class="main-carousel js-flickity">
+          <div class="carousel-cell">
+            <img src="assets/img/musicalityLogo.JPG" alt="" class="carousel-image"/>
+          </div>
+          <div class="carousel-cell">
+            <img src="assets/img/Giftasticlogo.JPG" alt="" class="carousel-image"/>
+          </div>
+          <div class="carousel-cell">
+            <img src="assets/img/psychicgame.JPG" alt="" class="carousel-image"/>
+          </div>
+          <div class="carousel-cell">
+            <img src="assets/img/TrainScheduler.JPG" alt="" class="carousel-image"/>
+          </div>
+          <div class="carousel-cell">
+            <img src="/assets/img/Stitches-Tape_pic.JPG" alt="" class="carousel-image"/>
+          </div>
+          <div class="carousel-cell">
+            <img src="assets/img/bamazonManagerOpt2.JPG" alt="" class="carousel-image"/>
+          </div>
+          <div class="carousel-cell">
+            <img src="assets/img/burger-homepage.JPG" alt="" class="carousel-image"/>
+          </div>
+          <!-- <div class="carousel-cell">
+            <img src="assets/img/TrainScheduler.JPG" alt="" class="carousel-image"/>
+          </div> -->
+        </div>
+
+        <div class="col s6 l6">
+            <div class="right-align white-text portfolio-info"> 
+              <p>Front-End: I use React.js! It's something that is pretty cool and interesting technology to use. I am always learning something new with React.<br><br>
+              Back-End: I mess around with Node.js and Express.js! These are technologies that I learned  when I started coding. <br><br>
+            Database: Believe it or not, I use MongoDB!</p>
+            </div>
+        </div>
+        
+            <!-- <p class="flow-text indigo-text text-darken-4"></p>
          
             <div class="project-list">
               <hr>
@@ -125,80 +152,9 @@
           </div></a>
       </div>
 
+        </div> -->
         </div>
-        </div>
-        <div id="backend" class="col s12">
-            <p class="flow-text indigo-text text-darken-4"></p>
-           <div class="project-list"><hr>
-            <p class="description">LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.</p>
-            <div class="containerImage">
-              <img src="assets/img/movie-this2.JPG" alt="LIRI-Node.js"
-                  class="project" width="150" height="150">
-              <a href="https://github.com/wgonz94/liri-node-app" target="_blank">
-                  <div class="overlay">
-                      <div class="text">LIRI</div>
-                  </div></a>
-              
-          </div>
-         
-          <hr> 
-          <p class="description">An Amazon-like storefront, "Bamazon", application with the MySQL skills. The app will take in orders from customers and update/deplete stock from the store's inventory.</p>
-          <div class="containerImage">
-              <img src="assets/img/bamazonManagerOpt2.JPG" alt="Bamazon" class="project"
-                  width="150" height="150">
-              <a href="https://github.com/wgonz94/Node.js-MySQL-Bamazon" target="_blank" rel="noopener noreferrer">
-                  <div class="overlay">
-                      <div class="text">Bamazon</div>
-                  </div></a>
-              
-          </div><hr>
-         
-          </div>
-          </div>
-        <div id="fullstack" class="col s12">
-          <p class="flow-text indigo-text text-darken-4"></p>
-          <hr>
-          <div class="project-list">
-            <p class="description">Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will display the burger on the left side of the page -- waiting to be devoured. Each burger in the waiting area also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page. The app will store every burger in a database, whether devoured or not. This burger app is operated with MySQL, Node, Express, Handlebars and a homemade ORM (yum!)
-              <!-- <br><br><br>
-              <i class="fab fa-github fa-x"> GitHub Repository:<a href="https://github.com/wgonz94/burger"> Eat-Da-Burger!</a></i>   -->
-            </p>
-              <div class="col-3 col-sm-4 containerImage">
-    
-                  <img src="assets/img/burger-homepage.JPG"alt="Burger App" class="project"
-                      width="150" height="150">
-                      <a href="https://github.com/wgonz94/burger" target="_blank" rel="noopener noreferrer"><div class="overlay">
-                     <div class="text">Devour the Burger! App</div>
-                  </div></a>
-
-              </div>
-              <hr>
-              <div class="project-list">
-                <p class="description">The Stitches and Tape (S&T) measurement tracker is a simplified, yet dynamic, tracking tool. It allows you, the Clothier, to store and track all the measurements you might need to create anything from a simple shirt to a bespoke suit and everything else in-between for your clientele. Athleisure ware, business suits, cosplay, evening gowns, you'll have the needed measurements at the click of a button instead of wading through folders of measurement sheets.
-                </p>
-                  <div class="col-3 col-sm-4 containerImage">
-                      <img src="assets/img/Stitches-Tape_pic.JPG"alt="Stitches-Tape App" class="project"
-                          width="150" height="150">
-                          <a href="https://github.com/BBQ-Lasagna/Stitches-Tape" target="_blank" rel="noopener noreferrer"><div class="overlay">
-                         <div class="text">Stitches-Tape</div>
-                      </div></a>
-    
-                  </div>
-                  <hr>
-          </div>
-           <p class="description">A compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.</p>
-          <div class="containerImage">
-              <img src="assets/img/deployed-homepage.JPG" alt="Friend-Finder"
-                  class="project" width="150" height="150">
-              <a href="https://github.com/wgonz94/Friend-Finder" target="_blank" rel="noopener noreferrer">
-                  <div class="overlay">
-                      <div class="text">Friend Finder</div>
-                  </div></a>
-          </div>
-      </div>
         
-      </div>
-    </div>
   </section>
 
   <!-- parallax -->
@@ -211,7 +167,7 @@
   <!-- contact -->
   <section class="section container scrollspy" id="contact">
       <div class="row">
-        <div class="col s12 l5 push-l3">
+        <div class="col s12 l6 offset-l6">
           <h2 class="white-text contact">Let's Get In Touch</h2>
           <p class="contact"> To contact me for any questions or job opportunities, please do not hesitate to email me or message me on Linkedin.</p>
           
@@ -248,6 +204,8 @@
  <!-- Compiled and minified JavaScript -->
  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+ <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
  <script src="./assets/javascript/function.js"></script>
+ 
 </body>
 </html>

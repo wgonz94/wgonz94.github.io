@@ -8,3 +8,13 @@ $(document).ready(function(){
   $('.scrollspy').scrollSpy();
 });
 
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'center',
+  contain: true,
+  wrapAround: true,
+  autoPlay: true
+});
+
+
+
