@@ -23,6 +23,9 @@ nav{
   width: 75%;
   margin-left: 12.5%;
 }
+p.white-text.animated{
+  margin: 30px;
+}
 section{
   min-height: 600px;
 }
@@ -39,12 +42,13 @@ a:hover{
   color: orangered;
 }
 img.portfo{
-  margin-top: 45px;
+  margin-top: 150px;
 }
 
 p.aboutMe{
   text-overflow: ellipsis;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
 }
 
 h1.portfolio{
@@ -265,9 +269,9 @@ div.portfolio-info{
 }
 div.main-carousel.js-flickity{
   border: solid white;
-  width: 50%;
-  height: 50%;
-  float: left;
+  /* width: 50%;
+  height: 50%; */
+  /* float: left; */
   
 }
 
