@@ -51,11 +51,7 @@ p.aboutMe{
   font-size: 20px;
 }
 
-h1.portfolio{
-  /* border-bottom: dashed whitesmoke 2px; */
-  width: 450px;
-  margin-left: 30%;
-}
+
 
 h2.contact{
   text-align: center;
@@ -76,7 +72,7 @@ p.contact{
 .image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 150px;
 }
 
 .overlay {
@@ -115,14 +111,29 @@ p.description{
   width: 650px;
 }
 
-img.project{
-  border-radius: 10px;
-  margin: 10px;
-}
+
 div.project-list{
-height: 200px;
-width: auto;
+position: relative;
+right: 200px;
+bottom: 5px;
 }
+div.project-item{
+  position: absolute;
+  height: 300px;
+  width: 50%;
+  border: blue solid;
+}
+div.project-item.top{
+ float: right;
+ position: relative;
+ left: 25px;
+}
+div.project-item.right{
+  position: relative;
+  left: 579px;
+ }
+
+
 
 div#frontend{
   border: dashed coral 5px;
