@@ -75,6 +75,16 @@ p.contact{
   height: 150px;
   border-radius: 12px;
 }
+.image-logo{
+  border: goldenrod solid;
+  border-radius: 12px;
+  float: left;
+  margin: 10px;
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 150px;
+}
 
 .overlay {
   position: absolute;
@@ -209,7 +219,7 @@ p{
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: coral; 
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* Handle on hover */
