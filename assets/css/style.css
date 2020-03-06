@@ -51,15 +51,69 @@ p.aboutMe{
   font-size: 20px;
 }
 
+.contact-list{
+  position: relative;
+  left: 200px;
+  top: 50px; 
+}
+div.contact{
+  position: relative;
+  top: 150px;
+  right: 100px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 18px;
+  background-color: darkslategray;
+  height: 75px;
+  width: 350px;
+  padding-top: 8px;
+  border-radius: 10px;
+}
+div.contact.linkedIn{
+  padding-bottom: 100px;
+  position: relative;
+}
+p.linked{
+  position: relative;
+  bottom: 10px;
+}
 
+div.email{
+  position: relative;
+  right: 135px;
+}
+div.contact.github{
+  position: relative;
+  padding-bottom: 150px;
+  left: 175px;
+}
+
+div.contact.resume{
+  padding-top: 20px;
+  position: relative;
+  left: 235px;
+  top: 35px;
+}
+div.contactme{
+  width: 350px;
+  position: absolute;
+  right: 800px;
+}
 
 h2.contact{
   text-align: center;
-  margin-left: 15%;
+  position: absolute;
+  right: 590px;
 }
+p.white-text{
+  font-size: 25px;
+}
+
 p.contact{
+  position: relative;
+  top: 100px;
+  left: 180px;
   text-align: center;
-  margin-left: 15%;
   color: whitesmoke;
   font-size: 16px;
 }
