@@ -207,6 +207,10 @@ div.project-item.two{
 div.project-item.three{
   left: 1075px;
 }
+div.project-item.end{
+  left: 535px;
+  width: 52%;
+}
 div.project-item.top{
  float: right;
  position: relative;
@@ -227,6 +231,11 @@ div.project-item.right{
  position: relative;
  left: 565px;
 bottom: 300px;
+}
+
+div.bottom-row{
+  position: relative;
+  left: 50%;
 }
 
 
