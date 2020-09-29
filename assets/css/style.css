@@ -45,6 +45,7 @@ img.portfo{
   width: 300px;
   margin-top: 150px;
   float: left;
+  margin-right: 45px;
 }
 
 p.aboutMe{
@@ -52,6 +53,7 @@ p.aboutMe{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   margin-left: 25px;
+  margin-top: 55px;
 }
 
 .contact-list{
